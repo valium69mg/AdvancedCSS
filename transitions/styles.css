@@ -1,0 +1,58 @@
+/*APP CONTAINER*/
+.App {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+/* BUTTON FLEX CONTAINER */
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    width: 20vh;
+    align-items: center;
+}
+/* BUTTON ATTRIBUTES */
+.buttonContainer button {
+    padding: 6px;
+    width: 100%;
+}
+
+/* BUTTON 1 TRANSITION */
+#btn1 {
+    transition: ease 0.5s;
+}
+
+#btn1:hover {
+    background-color: greenyellow;
+}
+
+/* BUTTON 2 TRANSITION */
+#btn2 {
+    transition-property: translate();
+    transition-duration: 0.5s;
+
+}
+
+#btn2:hover {
+    transition-timing-function: ease;
+    transform: translate(10vh);
+    background-color: blueviolet;
+}
+
+/* BUTTON 3 TRANSITION */
+#btn3 {
+    transition-property: translate();
+    transition-duration: 0.5s;
+
+}
+
+#btn3:hover {
+    transition-timing-function: ease-out;
+    transform: translate(-10vh);
+    background-color: yellow;
+}
