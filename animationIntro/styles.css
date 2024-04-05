@@ -6,4 +6,12 @@ body {
     width: 150px;
     height: 150px;
     background-color: red;
+    animation-name: moving;
+    animation-duration: 3s;
+}
+
+@keyframes moving {
+    from {transform: translateX(0);}
+
+    to {transform: translateX(1000px);}
 }
