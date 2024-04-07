@@ -1,0 +1,16 @@
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    animation-name: moving;
+    animation-duration: 5s;
+    animation-fill-mode:forwards;
+    animation-delay: 3s;
+}
+
+@keyframes moving {
+    0% {transform: translateX(0);}
+    50% {transform: translateX(1000px);}
+    100% {transform: translate(1000px,500px);}
+} 
